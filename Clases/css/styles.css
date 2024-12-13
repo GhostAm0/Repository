@@ -1,0 +1,36 @@
+h1{
+    color: tomato;
+}
+
+h1{
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+hr{
+    font-family: monospace; /*No tiene efecto*/
+    background-color: #0074e8; /*Si tiene efecto*/
+}
+
+h2 {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h1{
+    color: #0074e8;
+    background-color: #00cc99;
+    border: px solid #ff00ff;
+    box-shadow: 2px 2px 5px #ffff00;
+    text-shadow: 1px 1px 2px #ff3333;
+}
+
+h2{
+    color: red;
+    background-color: #ff9428;
+    border-color: rgb(15, 80, 250);
+    box-shadow: 2px 2px 5px rgba(204, 2, 204,0.5);
+    text-shadow: 1px 1px 2px rgba(4, 204, 24, 0.5);
+}
