@@ -1,0 +1,19 @@
+body {
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  dt {
+    font-weight: bolder;
+  }
+  .pokemon-info {
+    margin-top: 20px;
+  }
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .center {
+    text-align: center;
+  }
+  

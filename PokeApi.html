@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokeApi</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeAPI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+      href="css/stylePA.css"
+    />
+  </head>
+  <body>
     <thead>
-        <tr>
-            <center>
-                <th style="text-align: center; width: 100%;">
-                    <a href="https://ghostam0.github.io/PW/Inicio" style="font-size: 32px; text-decoration: none; display: inline-block;">Ir a Inicio</a>
-                </th>
-            </center>
-        </tr>
-    </thead>
-</body>
+      <tr>
+          <center>
+              <th style="text-align: center; width: 100%;">
+                  <a href="https://ghostam0.github.io/PW/Inicio" style="font-size: 32px; text-decoration: none; display: inline-block;">Ir a Inicio</a>
+              </th>
+          </center>
+      </tr>
+  </thead>
+    <main class="container">
+      <h1 class="center">PokeAPI</h1>
+
+      <section>
+        <label for="pokemon-search">Busca un Pokémon:</label>
+        <input type="text" id="pokemon-search" placeholder="Ej. pikachu" />
+        <button id="search-button">Buscar</button>
+        <p id="error-message" class="error-message"></p>
+      </section>
+
+      <article class="pokemon-info">
+        <dl>
+          <dt>Nombre</dt>
+          <dd id="pokemon-name">N/A</dd>
+          <dt>Tipos</dt>
+          <dd id="pokemon-types">N/A</dd>
+          <dt>Imagen</dt>
+          <dd>
+            <img id="pokemon-image" src="" alt="N/A" style="max-width: 150px;" />
+          </dd>
+          <dt>Habilidades</dt>
+          <dd id="pokemon-abilities">N/A</dd>
+          <dt>Peso</dt>
+          <dd id="pokemon-weight">N/A</dd>
+          <dt>Estadísticas Base</dt>
+          <dd id="pokemon-stats">N/A</dd>
+          <dt>Sonido</dt>
+          <dd>
+            <audio id="pokemon-sound" controls style="display: none;"></audio>
+          </dd>
+        </dl>
+      </article>
+    </main>
+
+    <script src="css/PokeApi.js"></script>
+  </body>
 </html>
