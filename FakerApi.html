@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FakerAPI Viewer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+      href="css/stylePA.css"
+    />
+    <link rel="stylesheet" href="css/FakerApi.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="center">FakerAPI Viewer</h1>
+
+      <section>
+        <label for="data-type">Seleccione el tipo de datos:</label>
+        <select id="data-type">
+          <option value="users">Usuarios</option>
+          <option value="books">Libros</option>
+          <option value="companies">Compañías</option>
+        </select>
+        <button id="fetch-data-button">Obtener Datos</button>
+      </section>
+
+      <section id="data-table">
+        <h2>Listado de Datos</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Imagen</th>
+              <th>Nombre</th>
+              <th>Detalles</th>
+            </tr>
+          </thead>
+          <tbody id="data-rows">
+          </tbody>
+        </table>
+      </section>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="close-modal">&times;</span>
+          <h2 id="modal-title"></h2>
+          <p id="modal-description"></p>
+          <img id="modal-image" src="" alt="Imagen" />
+        </div>
+      </div>
+
+    </main>
+    <script src="css/FakerApi.js"></script>
+  </body>
+</html>
