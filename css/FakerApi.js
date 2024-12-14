@@ -7,7 +7,6 @@ const modalDescription = document.getElementById("modal-description");
 const modalImage = document.getElementById("modal-image");
 const closeModal = document.getElementById("close-modal");
 
-// Base URL de la API
 const API_BASE = "https://fakerapi.it/api/v1";
 
 function fetchData(dataType) {
